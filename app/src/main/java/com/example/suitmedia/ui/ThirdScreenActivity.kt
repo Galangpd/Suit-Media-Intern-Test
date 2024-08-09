@@ -1,6 +1,7 @@
 package com.example.suitmedia.ui
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -39,6 +40,9 @@ class ThirdScreenActivity : AppCompatActivity() {
         thirdScreenViewModel.listUser.observe(this){ userItem ->
             setUserData(userItem)
         }
+        thirdScreenViewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
     }
 
     private fun setUpAction(){
@@ -52,6 +56,10 @@ class ThirdScreenActivity : AppCompatActivity() {
         val adapter = UserAdapter(this)
         adapter.submitList(useritem)
         binding.rvUser.adapter = adapter
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 
 }
