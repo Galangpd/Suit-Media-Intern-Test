@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SuitMedia</string>
+    <string name="password">Password</string>
+    <string name="Name">Name</string>
+    <string name="Palindrome">Palindrome</string>
+    <string name="next">NEXT</string>
+    <string name="check">CHECK</string>
+    <string name="Second_screen">Second Screen</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Username">John Doe</string>
+    <string name="selected_Username">Selected User Name</string>
+    <string name="ChooseUser">Choose a User</string>
+    <string name="Third_screen">Third Screen</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="email">email@email.com</string>
+</resources>
